@@ -3,16 +3,30 @@
 <html lang="pt">
 <header>
    <meta charset="utf-8">
+   <link rel="icon" type="image/png" href="img\ios.png"/>
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<p></p>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="Description" content="vitor Viana, portfolio online, resumo online, curriculum vitae, CV, pagina Pessoal">
+   <meta name="author" content="Vitor Viana">  
+  
+   <title>Vitor Viana - Website</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-47786735-1', 'vviana.com');
+    ga('send', 'pageview');
+  </script>
 </header>
 
  <body>
-
 
  	<div class="container" style="max-width: 850px;">
 
@@ -31,19 +45,25 @@
                   </li>
 				          <li><a href="#social">Contacte-me</a></li>
 				        </ul>
-				        <h3 class="text-muted">Vitor Pedro Boto Martins Viana</h3>
+                 <section itemscope itemtype="http://data-vocabulary.org/Person">
+				            <h3 itemprop="name" class="text-muted">Vitor Pedro Boto Martins Viana</h3>
+                </section>
 				      </div>
 
 	      <hr>
   
 		<div class="jumbotron">
 		      <div class="row featurette">
-		        <div class="col-md-3">
-		          <img src="img\foto_cv_small.png" class="img-circle" alt="vviana" style="padding: 0px !important;" > 
-		        </div>
+  		        <div class="col-md-3">
+                <section itemscope itemtype="http://data-vocabulary.org/Person">
+  		            <img itemprop="photo" src="img\foto_cv_small.png" class="img-circle" alt="vviana" style="padding: 0px !important;" > 
+                    </section>
+  		        </div>
 		        <div class="col-md-9" style="text-align:justify;">
 		          <h2 class="featurette-heading"> <span>Olá e seja bem vindo ao meu site pessoal!</span></h2>
-		          <p class="lead">O meu nome é Vitor Viana, sou licenciado em engenharia informática e de computadores, e este será o sítio onde pode encontrar algumas informações sobre mim. </p>
+               <section itemscope itemtype="http://data-vocabulary.org/Person">
+		          <p class="lead">O meu nome é <b itemprop="name">Vitor<b itemprop="familyName"> Viana</b></b>, sou licenciado em engenharia informática e de computadores, e este será o sítio onde pode encontrar algumas informações sobre mim. </p>
+              </section>
 		        </div>
 		      </div>
 		</div>
@@ -81,8 +101,11 @@
           <div class="blog-post" style="text-align:justify;">
             <h2 class="blog-post-title" id="expProfissional">Experiencia Profissional </h2>
             <hr>
-            <h3 style="margin:0px;padding:0px;" ><b>BI4ALL</b></h3>
-            <p class="blog-post-meta">Novembro 2009 - Presente</p>
+                <h3 style="margin:0px;padding:0px;" ><b>BI4ALL</b></h3>
+            <p class="blog-post-meta"> 
+              <section itemscope itemtype="http://data-vocabulary.org/Person">
+                <span itemprop="jobTitle">Programador desde </span> Novembro 2009 - Presente</p>
+               </section>
             <h4>
               <img src="img/glyphicons_223_chevron-right.png" style="width: 10px; height: 10px;"> Software de gestão de clinicas médicas</h4>
                <a href="http://www.crystalreports.com/" target="_blank" >
@@ -200,22 +223,39 @@
         <!-- Contactps--> 
          <div class="blog-post" style="text-align:justify;" id="minfo">
             <h2 class="blog-post-title" >Informações Adicionais</h2>
+            <section itemscope itemtype="http://data-vocabulary.org/Person">
+              <div class="row marketing">
+              <div class="col-lg-3">
+                <h4 ><span class="label label-info">Data Nascimento</span></h4>
+              </div>
+              <div class="col-lg-3">
+                <h4 itemprop="birthDate"><p>05-06-1986</p></h4>
+              </div>
+               <div class="col-lg-2">
+              <h4 ><span class="label label-info">Morada</span></h4>
+              </div>
+              <div class="col-lg-4">
+                <h4 > <p>Lisboa, Portugal</p></h4>
+              </div>
 
+            </div> 
             <div class="row marketing">
-            <div class="col-lg-3">
-              <h4 ><span class="label label-info">Data Nascimento</span></h4>
-            </div>
-            <div class="col-lg-3">
-              <h4 > <p>05-06-1986</p></h4>
-            </div>
-             <div class="col-lg-2">
-            <h4 ><span class="label label-info">Morada</span></h4>
-            </div>
-            <div class="col-lg-4">
-              <h4 > <p>Lisboa, Portugal</p></h4>
-            </div>
+              <div class="col-lg-3">
+                <h4 ><span class="label label-info">Nacionalidade</span></h4>
+              </div>
+              <div class="col-lg-3">
+                <h4 > <p>Portuguesa</p></h4>
+              </div>
+               <div class="col-lg-2">
+              <h4 ><span class="label label-info">Email</span></h4>
+              </div>
+              <div class="col-lg-4">
+                <h4 itemprop="email"> masterviana@outlook.com</h4>
+              </div>
 
           </div>  
+        </section>
+
             <hr>
           </div>
           <!-- frim Contactps--> 
@@ -230,21 +270,22 @@
 
         <div class="sidebar-module sidebar-module-inset text-center" id="social">
             <h4>Redes Sociais</h4>
+        <section itemscope itemtype="http://data-vocabulary.org/Person">
            <ol class="list-unstyled">
-              <li> <a href="http://www.linkedin.com/in/vviana" target="_blank" >
+              <li> <a itemprop="url" href="http://www.linkedin.com/in/vviana" target="_blank" >
                   <img src="img\lnk.png" class="img-circle" alt="LinkdIn" title="Visite o meu perfil LinkdIn" style="width: 35px; height: 35px;" >
                 </a></li>
-              <li> <a href="https://github.com/masterviana" target="_blank" >
+              <li> <a itemprop="url" href="https://github.com/masterviana" target="_blank" >
                   <img src="img\git.jpg" class="img-circle" alt="GitHub" title="Eu no GitHub" style="width: 35px; height: 35px;">
                 </a></li>
-              <li> <a href="https://plus.google.com/104595400231096231256" target="_blank" >
+              <li> <a itemprop="url" href="https://plus.google.com/104595400231096231256" target="_blank" >
                   <img src="img\gp.png" class="img-circle" alt="c" title="Eu no Google +" style="width: 35px; height: 35px;" >
                 </a></li>
-              <li> <a href="https://twitter.com/supViana" target="_blank" >
+              <li> <a  itemprop="url" href="https://twitter.com/supViana" target="_blank" >
                   <img src="img\twi.png" class="img-circle" alt="c" title="Eu no twitter" style="width: 35px; height: 35px;" >
                 </a></li>
             </ol>
-
+             </section>
           </div>
 
 
@@ -383,6 +424,7 @@
     <script src="js/bootstrap.min.js"></script>
 
      <script type="text/javascript" >
+
         $(function() {
             $('a').click(function() {
               if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -397,7 +439,9 @@
               }
             });
           });
+
   </script>
+
 
 
 
